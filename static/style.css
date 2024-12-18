@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    background-color: #008cba; /* Blue header background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bb5; /* Darker blue for headers */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 3px solid #005f87;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #eaf5fb;
+}
+
+/* Button Styling */
+button {
+    background-color: #008cba; /* Blue buttons */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #005f87; /* Darker blue on hover */
+}
+
+a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Form Alignment */
+form {
+    display: inline-block;
+}
+
+/* Page Layout */
+.container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+h2 {
+    color: #007bb5; /* Blue headings for details and remarks pages */
+    text-align: center;
+}

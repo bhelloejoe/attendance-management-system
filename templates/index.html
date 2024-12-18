@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Attendance Management System</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Attendance</th>
+            <th>Actions</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.attendance }}</td>
+            <td>
+                <form method="POST" action="{{ url_for('update', id=student.id) }}" style="display: inline;">
+                    <button name="present">Present</button>
+                    <button name="absent">Absent</button>
+                    <button name="tardy">Tardy</button>
+                    <button name="excused">Excused</button>
+                </form>
+                <a href="{{ url_for('remarks', id=student.id) }}">Remarks</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
